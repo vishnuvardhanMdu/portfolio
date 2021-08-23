@@ -1,0 +1,108 @@
+header {
+    background-color: #040b14;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 25px 0 25px;
+    width: 230px;
+    overflow: auto;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+#profile {
+    margin: 10% 0% 0% 0%;
+    font-family: 'Cantora One', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#img-border {
+    background-color: rgb(51, 63, 77);
+    border-radius: 90px;
+    height: 120px;
+    width: 120px;
+    margin: 0% 10% 0% 25%;
+}
+
+header img {
+    height: 105px;
+    width: 105px;
+    border-radius: 70px;
+    margin: 7px;
+}
+
+#social-media-icons {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    margin: 0 0 10px 0;
+}
+
+.icon-border {
+    background-color: rgb(51, 63, 77);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+}
+
+.icon {
+    padding-top: 9px;
+}
+
+.icon-border:hover {
+    background-color: #0099e0;
+}
+
+.icon-border img {
+    width: 22px;
+    height: 22px;
+}
+
+.nav-bar {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    font-size: 110%;
+    padding-left: 12px;
+    color: white;
+    height: 50px;
+}
+
+.nav-icon {
+    padding-right: 12px;
+    opacity: 0.8;
+}
+
+.nav-name {
+    opacity: 0.8;
+}
+
+.nav-btn:hover .nav-icon {
+    fill: #0099e0;
+    opacity: 1;
+}
+
+.nav-btn:hover .nav-name {
+    opacity: 1;
+}
+
+.active .nav-icon {
+    fill: #0099e0;
+    opacity: 1;
+}
+
+.active .nav-name {
+    opacity: 1;
+}

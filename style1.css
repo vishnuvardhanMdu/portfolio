@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1160px) {
+    header {
+        display: none;
+    }
+    .content {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .welcome-text {
+        top: 40%;
+        right: 15%;
+        color: #ffffff;
+        text-shadow: 2px 2px 3px black, 0 0 50px blue, 0 0 10px darkblue;
+        font-weight: bold;
+    }
+    .myname {
+        font-size: 400%;
+    }
+    .mytag {
+        font-size: 300%;
+        text-align: right;
+    }
+}

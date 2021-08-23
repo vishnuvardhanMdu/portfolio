@@ -1,0 +1,217 @@
+    body {
+        margin: 0;
+        font-family: 'Ruluko', sans-serif;
+    }
+
+    #cover-img {
+        width: 100%;
+        height: 100vh;
+        background: url("images/background-image1.jpg") top center;
+        background-size: cover;
+    }
+
+    #cover-img:before {
+        content: "";
+        /* background: rgba(5, 13, 24, 0.3); */
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    @media (min-width: 1024px) {
+        #cover-img {
+            background-attachment: fixed;
+        }
+    }
+
+    .welcome {
+        margin: 0;
+        padding: 0;
+        top: 0;
+        display: block;
+    }
+
+    .welcome-text {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px black, 0 0 25px #0099e0, 0 0 5px darkblue;
+    }
+
+    .myname {
+        font-size: 300%;
+    }
+
+    .mytag {
+        font-size: 200%;
+        text-align: right;
+    }
+
+    #text {
+        display: inline-block;
+        vertical-align: middle;
+        color: orange;
+        letter-spacing: 2px;
+    }
+
+    #cursor {
+        display: inline-block;
+        vertical-align: middle;
+        width: 3px;
+        height: 50px;
+        background-color: orange;
+        animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+        from, to {
+            background-color: transparent
+        }
+        50% {
+            background-color: orange;
+        }
+    }
+
+    .content {
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 280px;
+        padding: 2%;
+    }
+
+    .section-heading {
+        font-size: 30px;
+        font-weight: bold;
+        color: #272829;
+        margin-bottom: 10px;
+    }
+
+    .section-underline {
+        width: 80px;
+        border-top: 4px solid red;
+        margin-top: 0;
+    }
+
+    .section-description {
+        line-height: 25px;
+        text-align: justify;
+    }
+
+    .section-content {
+        margin: 50px 0px 50px 0px;
+        width: 100%;
+    }
+
+    .about-photo {
+        height: 250px;
+        width: 250px;
+        margin: 30px;
+        position: relative;
+        box-shadow: -8px 12px 15px black;
+        transform: rotate(-5deg);
+    }
+
+    .photo-pin {
+        height: 50px;
+        width: 55px;
+        position: absolute;
+        margin: 35px 0px 0px 130px;
+    }
+
+    .section-details {
+        margin: 0;
+        /* padding: 0 20px 0 10px; */
+        border-color: lightgrey;
+        border-style: solid;
+        background-color: rgb(73, 73, 73);
+        border-width: 10px;
+        padding: 10px 20px 5px 20px;
+        font-family: 'Reenie Beanie', cursive;
+    }
+
+    .details-board {
+        display: grid;
+        grid-template-columns: 35% 65%;
+    }
+
+    .details-heading {
+        margin: 0;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0;
+        color: rgba(253, 253, 34);
+        text-decoration: underline;
+    }
+
+    .details-description {
+        font-size: 30px;
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.705);
+        line-height: 25px;
+    }
+
+    .personal-details-section {
+        margin-bottom: 20px;
+    }
+
+    .personal-details-column {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .personal-details-column-section {
+        padding: 5px 20px 20px 20px;
+        box-shadow: -5px 8px 5px black;
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
+
+    .rotate-10 {
+        transform: rotate(10deg);
+        background-color: rgb(255, 204, 204);
+    }
+
+    .rotate-15 {
+        transform: rotate(15deg);
+        background-color: #ffc;
+    }
+
+    .rotate-350 {
+        transform: rotate(350deg);
+        background-color: #cfc;
+    }
+
+    .rotate-345 {
+        background-color: rgb(204, 218, 255);
+        transform: rotate(345deg);
+    }
+
+    .no-rotate {
+        background-color: rgb(255, 233, 204);
+        transform: rotate(340deg);
+    }
+
+    .personal-details-title {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        font-weight: bold;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+
+    .personal-details-description {
+        font-family: 'Reenie Beanie', cursive;
+        margin: 0;
+        font-size: 26px;
+        overflow-wrap: break-word;
+        font-weight: 600;
+    }
+
+    .reduce-font {
+        font-size: 22px;
+    }
