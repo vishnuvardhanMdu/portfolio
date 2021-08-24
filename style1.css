@@ -22,9 +22,26 @@
         font-size: 300%;
         text-align: right;
     }
+
+    .content{
+        width: 100%;
+    }
+
+    .section-description{
+        font-size: 170%;
+        line-height: 60px;
+    }
+
     .details-board {
         display:unset;
     }
+    .section-heading {
+        font-size: 50px;
+        font-weight: bold;
+        color: #272829;
+        margin-bottom: 10px;
+    }
+
     .photo-pin {
         margin: 55px 0px 0px -420px;
         height: 150px;
@@ -55,5 +72,26 @@
     }
     .personal-details-description {
         font-size: 46px;
+    }
+
+    .skill-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skill-cell {
+        padding: 0px;
+
+    }
+
+    .skill-title {
+        font-size: 330%;
+    }
+
+
+    .progress-bar {
+        width: 100%;
+        background-color: green;
+        height: 12px;
     }
 }

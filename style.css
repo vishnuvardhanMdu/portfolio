@@ -79,6 +79,9 @@
     .content {
         font-family: 'Open Sans', sans-serif;
         margin-left: 280px;
+    }
+
+    #about {
         padding: 2%;
     }
 
@@ -89,9 +92,17 @@
         margin-bottom: 10px;
     }
 
+    .section-heading-end {
+        font-size: 20px;
+        font-weight: bold;
+        color: #272829;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .section-underline {
         width: 80px;
-        border-top: 4px solid red;
+        border-top: 4px solid rgb(219, 0, 0);
         margin-top: 0;
     }
 
@@ -101,7 +112,7 @@
     }
 
     .section-content {
-        margin: 50px 0px 50px 0px;
+        margin: 50px 0px 30px 0px;
     }
 
     .about-photo {
@@ -212,4 +223,45 @@
 
     .reduce-font {
         font-size: 22px;
+    }
+
+    #skills {
+        padding: 2%;
+        background-color: rgb(235, 235, 235);
+    }
+
+    .container {
+        padding: 10px 80px 10px 80px;
+    }
+
+    .skill-column {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skill-cell {
+        width: 100%;
+        padding: 10px 25px 10px 25px;
+    }
+
+    .skill-title {
+        display: flex;
+        flex-direction: row;
+        /* font-size: 310%; */
+        font-weight: bold;
+    }
+
+    .skill-name {
+        width: 50%;
+    }
+
+    .skill-percent {
+        width: 50%;
+        text-align: right;
+    }
+
+    .progress-bar {
+        width: 100%;
+        background-color: green;
+        height: 12px;
     }
