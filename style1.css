@@ -22,4 +22,38 @@
         font-size: 300%;
         text-align: right;
     }
+    .details-board {
+        display:unset;
+    }
+    .photo-pin {
+        margin: 55px 0px 0px -420px;
+        height: 150px;
+        width: 155px;
+    }
+    .about-photo {
+        height: 600px;
+        width: 600px;
+        margin: 40px 100px 90px 140px;
+        align-self: center;
+        justify-self: center;
+    }
+    .personal-details-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .personal-details-column {
+        flex-direction: column;
+    }
+    .personal-details-column-section {
+        height: 200px;
+        width: 200px;
+        margin: 50px;
+    }
+    .personal-details-title {
+        font-size: 40px;
+    }
+    .personal-details-description {
+        font-size: 46px;
+    }
 }

@@ -102,7 +102,6 @@
 
     .section-content {
         margin: 50px 0px 50px 0px;
-        width: 100%;
     }
 
     .about-photo {
@@ -147,7 +146,7 @@
     }
 
     .details-description {
-        font-size: 30px;
+        font-size: 180%;
         margin-top: 10px;
         color: rgba(255, 255, 255, 0.705);
         line-height: 25px;
@@ -160,7 +159,6 @@
     .personal-details-column {
         display: flex;
         flex-direction: row;
-        width: 100%;
     }
 
     .personal-details-column-section {
