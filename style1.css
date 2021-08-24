@@ -7,7 +7,7 @@
     }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 100px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .welcome-text {
         top: 40%;
         right: 15%;
