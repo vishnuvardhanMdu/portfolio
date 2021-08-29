@@ -82,7 +82,7 @@
     }
 
     #about {
-        padding: 2%;
+        padding: 0 5% 0 5%;
     }
 
     .section-heading {
@@ -149,11 +149,14 @@
 
     .details-heading {
         margin: 0;
-        text-align: center;
         font-family: 'Open Sans', sans-serif;
         padding: 0;
+    }
+
+    .board-heading {
         color: rgba(253, 253, 34);
         text-decoration: underline;
+        text-align: center;
     }
 
     .details-description {
@@ -226,7 +229,7 @@
     }
 
     #skills {
-        padding: 2%;
+        padding: 1% 5% 1% 5%;
         background-color: rgb(235, 235, 235);
     }
 
@@ -264,4 +267,81 @@
         width: 100%;
         background-color: green;
         height: 12px;
+    }
+
+    #resume {
+        padding: 0 5% 0 5%;
+    }
+
+    .exprience-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .exprience-column {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .exprience-column h2 {
+        /* padding-left: 10px; */
+        padding: 10px 0 30px 10px;
+    }
+
+    .exprience-cell {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .circle-vertical-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circle {
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    .vertical-line {
+        border-left: 2px solid black;
+        height: 120px;
+        margin-left: 10px;
+    }
+
+    .exprience-content {
+        padding: 0 10px 0 10px;
+    }
+    .exprience-content a {
+        text-decoration: none;
+
+    }
+
+    .exprience-title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .exprience-duration{
+        background-color: rgb(238, 235, 235);
+        color: rgb(87, 87, 87);
+        font-weight: bold;
+        padding: 5px 10px 5px 10px;
+        margin: 5px 0px 5px 0px;
+        width:fit-content ;
+    }
+
+    .exprience-company {
+        text-transform: capitalize;
+        font-style: italic;
+    }
+    
+    .exprience-description {
+        padding-bottom: 10px;
+        color: rgb(27, 27, 27);
     }
