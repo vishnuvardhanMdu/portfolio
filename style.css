@@ -317,9 +317,9 @@
     .exprience-content {
         padding: 0 10px 0 10px;
     }
+
     .exprience-content a {
         text-decoration: none;
-
     }
 
     .exprience-title {
@@ -327,21 +327,104 @@
         font-weight: bold;
     }
 
-    .exprience-duration{
+    .exprience-duration {
         background-color: rgb(238, 235, 235);
         color: rgb(87, 87, 87);
         font-weight: bold;
         padding: 5px 10px 5px 10px;
         margin: 5px 0px 5px 0px;
-        width:fit-content ;
+        width: fit-content;
     }
 
     .exprience-company {
         text-transform: capitalize;
         font-style: italic;
     }
-    
+
     .exprience-description {
         padding-bottom: 10px;
         color: rgb(27, 27, 27);
+    }
+
+    #portfolio {
+        padding: 0 5% 0 5%;
+    }
+
+    .project-container {
+        padding-top: 20px;
+    }
+
+    .project-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .project-cell {
+        width: 250px;
+        height: 150px;
+        border-radius: 15px;
+        margin: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: blue;
+        text-align: center;
+    }
+
+    .project-cell::before {
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        z-index: -3;
+    }
+
+    #covid-tracker {
+        background-image: url("images/crop-coronavirus.jpg");
+    }
+
+    #task-management {
+        background-image: url("images/porject-task-management.jpg");
+    }
+
+    #boostrap-clone {
+        background-image: url("images/project-bootstrap.jfif");
+    }
+
+    #hospital-appointment-booking{
+        background-image: url("images/project-appointment.jfif");
+
+    }
+    #thirukkural-pazhagu{
+        background-image: url("images/project-thirukkural.jpg");
+    }
+
+    #online-assessment-app{
+        background-image: url("images/project-online.png");
+    }
+
+    .project-text:hover {
+        opacity: 1;
+        background-color: rgba(0, 0, 255, 0.626);
+    }
+
+    .project-text {
+        width: 220px;
+        height: 110px;
+        padding: 40px 15px 0 15px;
+        opacity: 0;
+        margin: 0;
+        border-radius: 15px;
+        align-content: center;
+        font-size: 24px;
+        top: 0;
+        font-weight: bold;
+        color: #FFF;
+        position: relative;
+        text-shadow: 1px 1px 25px black, 0 0 25px #0099e0, 0 0 5px darkblue;
     }
