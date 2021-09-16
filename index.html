@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="transition.css">
     <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,14 +163,15 @@
                                         <p class="personal-details-title">Age</p>
                                         <p class="personal-details-description" id="age"></p>
                                     </div>
-                                    <div class="personal-details-column-section rotate-10">
-                                        <p class="personal-details-title">Email</p>
-                                        <p class="personal-details-description">vishnu.s2810@gmail.com</p>
-                                    </div>
-                                    <div class="personal-details-column-section rotate-345">
-                                        <p class="personal-details-title">Degree</p>
-                                        <p class="reduce-font personal-details-description">B.Tech Information
-                                            Technology</p>
+                                    <div class="personal-details-column-section-code rotate-10">
+        
+                                        <p class="personal-details-description" style="font-family: monospace;font-size: 20px;">
+                                            int main(){<br>
+                                            &ensp;&emsp;human *me = new human;<br>
+                                            &ensp;&emsp;while(me->awake()){<br>
+                                            &ensp;&emsp;&emsp;&emsp;me->code();<br>
+                                            &ensp;&emsp;}<br>
+                                        }</p>
                                     </div>
                                 </div>
                             </div>
@@ -328,54 +330,138 @@
             <section id="portfolio">
                 <p class="section-heading">&#60;Portfolio&gt;</p>
                 <hr class="section-underline" align="left">
-                <h2 class="details-heading">My Recent Works</h2>
-                <p class="section-description">
-                    Fueled by high energy levels and boundless enthusiasm,I define myself by the work I want to
-                    do. Skills can be taught, personality is inherent. I prefer to keep learning, continue
-                    challenging myself, and do interesting things that matter.
+                <h2 class="details-heading">My Creations</h2>
+                <p class="section-description center">
+                    I like to code things from scratch, and enjoy bringing ideas to life in the browser.
                 </p>
                 <div class="project-container">
                     <div class="project-column">
-                        <div class="project-cell" id="covid-tracker">
-                            <div class="background"></div>
-                            <p class="project-text"> 
-                                COVID-19 Tracker    
-                            </p>
-                        </div>
-                        <div class="project-cell" id="task-management">
-                            <p class="project-text"> 
-                                Task Management System
-                            </p>
-                        </div>
-                        <div class="project-cell" id="boostrap-clone">
-                            <p class="project-text"> 
-                                Boostrap Docs Clone
-                            </p>
-                        </div>
+                        <a class="project-link" href="https://github.com/vishnuvardhanMdu/covid-19-tracker"
+                            target="_blank">
+                            <div class="project-cell" id="covid-tracker">
+                                <p class="project-text">
+                                    COVID-19 Tracker
+                                </p>
+                            </div>
+                        </a>
+                        <a class="project-link" href="https://github.com/vishnuvardhanMdu/TaskManagementSystem"
+                            target="_blank">
+                            <div class="project-cell" id="task-management">
+                                <p class="project-text">
+                                    Task Management System
+                                </p>
+                            </div>
+                        </a>
+                        <a class="project-link" href="https://github.com/vishnuvardhanMdu/Bootstrap-docs-clone"
+                            target="_blank">
+
+                            <div class="project-cell" id="boostrap-clone">
+                                <p class="project-text">
+                                    Boostrap Docs Clone
+                                </p>
+                            </div>
+                        </a>
                     </div>
                     <div class="project-column">
-                        <div class="project-cell" id="hospital-appointment-booking">
-                            <div class="background"></div>
-                            <p class="project-text"> 
-                                Appointment Booking System
-                            </p>
-                        </div>
-                        <div class="project-cell" id="thirukkural-pazhagu">
-                            <p class="project-text"> 
-                                Thirukkural Pazhagu
-                                (Loading...)
-                            </p>
-                        </div>
-                        <div class="project-cell" id="online-assessment-app">
-                            <p class="project-text"> 
-                                Online Assessment App
-                                (Loading...)
-                            </p>
-                        </div>
+                        <a class="project-link"
+                            href="https://github.com/vishnuvardhanMdu/hospital-appointment-booking-angularJS"
+                            target="_blank">
+                            <div class="project-cell" id="hospital-appointment-booking">
+                                <div class="background"></div>
+                                <p class="project-text">
+                                    Appointment Booking System
+                                </p>
+                            </div>
+                        </a>
+                        <a class="project-link" target="_blank">
+                            <div class="project-cell" id="thirukkural-pazhagu">
+                                <p class="project-text">
+                                    Thirukkural Pazhagu
+                                    (Loading...)
+                                </p>
+                            </div>
+                        </a>
+                        <a class="project-link" target="_blank">
+                            <div class="project-cell" id="online-assessment-app">
+                                <p class="project-text">
+                                    Online Assessment App
+                                    (Loading...)
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <p class="section-heading-end">&#60;/Portfolio&gt;</p>
             </section>
+            <section id="contact">
+                <p class="section-heading">&#60;Contact&gt;</p>
+                <hr class="section-underline" align="left">
+                <div class="contact-container">
+                    <div class="contact-block">
+                        <div class="my-details">
+                            <div class="details-cell">
+                                <div class="contact-icon">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <h2 class="detail-title">Location</h2>
+                                    <p class="detail-description">Madurai, TamilNadu, INDIA</p>
+                                </div>
+                            </div>
+                            <div class="details-cell">
+                                <div class="contact-icon">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <h2 class="detail-title">Mail</h2>
+                                    <p class="detail-description">vishnu.s2810@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="details-cell">
+                                <div class="contact-icon">
+                                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+
+                                    </svg>
+                                </div>
+                                <div class="detail-content">
+                                    <h2 class="detail-title">Phone</h2>
+                                    <p class="detail-description">+91 8220449871</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input class="contact-input" type="text" placeholder="Name" id="username" name="username">
+                            <input class="contact-input" type="email" placeholder="Email" id="useremail"
+                                name="useremail">
+                            <input class="contact-input" type="text" placeholder="Subject" id="subject" name="subject">
+                            <textarea class="contact-textarea" placeholder="Message" id="message" name="message"
+                                rows="10"></textarea>
+                            <button class="contact-input contact-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+        <p class="section-heading-end">&#60;/Resume&gt;</p>
+        </section>
+        <footer>
+            &#169; Created by Vishnu Vardhan S
+        </footer>
         </div>
     </main>
     <script src="app.js"></script>
